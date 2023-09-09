@@ -1,0 +1,16 @@
+<div  class="container">
+    <div *ngFor="let item of items">
+        <div class="card">
+            <h3>{{item.name}}</h3>
+            <div class="img"><img width="100px" height="150px" src="/assets/product.jpg" alt="image" id="img"></div>
+            <div class="info">
+                <div class="count"> <button [disabled]="item.isAdded" (click)="changeCount('add',item.id)">+</button>
+                    {{item.count}} <button [disabled]="item.isAdded" (click)="changeCount('remove',item.id)">-</button>
+                </div>
+                <button [disabled]="item.isAdded" (click)="addToCart(item)"> <span *ngIf="item.isAdded">item
+                        added</span> <span *ngIf="!item.isAdded">add to cart</span> </button>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+    <div *ngFor="let item of cart">
+        <div class="card">
+            <h3>{{item.name}}</h3>
+            <div class="img"><img width="100px" height="150px" src="/assets/product.jpg" alt="image" id="img"></div>
+            <div class="info">
+                <div class="count"> <button (click)="changeCount('add',item.id)">+</button>
+                    {{item.count}} <button (click)="changeCount('remove',item.id)">-</button>
+                </div>
+                <button (click)="removeItem(item.id)">Remove </button>
+            </div>
+        </div>
+    </div>
+
+</div>

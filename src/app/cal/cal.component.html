@@ -1,0 +1,36 @@
+<div>
+    <input [value]="display" type="text" name="" id="" disabled>
+    <div class="keys">
+        <div class="row1">
+            <button (click)="addToExpression('1')">1</button>
+            <button (click)="addToExpression('2')">2</button>
+            <button (click)="addToExpression('3')">3</button>
+        </div>
+
+        <div class="row2">
+            <button (click)="addToExpression('4')">4</button>
+            <button (click)="addToExpression('5')">5</button>
+            <button (click)="addToExpression('6')">6</button>
+        </div>
+
+        <div class="row3">
+            <button (click)="addToExpression('7')">7</button>
+            <button (click)="addToExpression('8')">8</button>
+            <button (click)="addToExpression('9')">9</button>
+        </div>
+
+        <div class="row4">
+            <button (click)="addToExpression('0')">0</button>
+            <button (click)="clearScreen()">Clear</button>
+        </div>
+        <div class="row5">
+            <button (click)="addToExpression('+')">+</button>
+            <button (click)="addToExpression('-')">-</button>
+            <button (click)="addToExpression('/')">/</button>
+            <button (click)="addToExpression('*')">*</button>
+            <button (click)="calculateResult()">=</button>
+        </div>
+
+    </div>
+
+</div>
